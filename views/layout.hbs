@@ -4,9 +4,17 @@
     <title>{{title}}</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta autor= "Luis Jurado Quesada">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+  
+    <link rel='stylesheet' href='components/bootstrap/dist/css/bootstrap.min.css'/>
+    <link rel='stylesheet' href='dist/css/main.min.css'/>
   </head>
   <body>
+    
+     {{>header}}
     {{{body}}}
+    {{>footer}}
+<script type="text/javascript" src="dist/javascripts/main.min.js"></script>
   </body>
 </html>
+  
+  

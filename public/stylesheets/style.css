@@ -5,4 +5,30 @@ body {
 
 a {
   color: #00B7FF;
+  font-size: 25px;
 }
+
+.Gridheader {
+  background-color: green;
+}
+
+.Grid1 {
+  background-color: palevioletred;
+}
+
+.Grid {
+  background-color: red;
+}
+
+.lists {
+  background-color: saddlebrown;
+}
+
+input {
+  background-color: yellow;
+}
+
+#lista {
+  background-color: olive;
+}
+
