@@ -10,8 +10,22 @@
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
     "hbs": "~4.0.1",
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0"
-  }
+  },
+  "description": "New To DO",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mantecorso/ToDoHTML5.git"
+  },
+  "author": "Luis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mantecorso/ToDoHTML5/issues"
+  },
+  "homepage": "https://github.com/Mantecorso/ToDoHTML5#readme"
 }
