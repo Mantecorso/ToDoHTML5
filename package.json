@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "start-backend": "nodemon ./bin/www",
+    "start-frontend": "gulp"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -13,6 +15,7 @@
     "express": "~4.16.0",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^3.9.4",
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.2.3",
     "gulp-uglify": "^3.0.0",
