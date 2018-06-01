@@ -14,12 +14,11 @@
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "gulp": "^3.9.1",
-    "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^3.9.4",
-    "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.2.3",
     "gulp-uglify": "^3.0.0",
     "hbs": "~4.0.1",
+    "hbs-utils": "0.0.4",
     "http-errors": "~1.6.2",
     "jquery": "^3.3.1",
     "morgan": "~1.9.0",
@@ -27,7 +26,9 @@
   },
   "description": "New To DO",
   "main": "app.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-concat": "^2.6.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mantecorso/ToDoHTML5.git"
