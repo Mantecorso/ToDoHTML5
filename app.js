@@ -3,6 +3,9 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const hbs = require('hbs');
+const hbsUtils = require('hbs-utils')(hbs);
+
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -13,11 +16,18 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
+//view engine partials//
+hbsUtils.registerPartials(`${__dirname}/views/partials`);
+//donde estan los partials para que los concatene todos y los ponga juntos en public/dist//
+hbsUtils.registerWatchedPartials(`${__dirname}/views/partials`);
+//obliga a nodemon a ver los Partials nuevos todo el tiempo//
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('bower_components', express.static(`${__dirname}/public/components`));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
